@@ -1,0 +1,11 @@
+import mysql.connector as mysql
+db = mysql.connect(host="localhost",user="root",passwd="",database="pydb")
+cursor = db.cursor()
+roll = int(input("Enter your Roll Number"))
+name = input("Enter your Name")
+age = int(input("Enter your Age"))
+marks = float(input("Enter your marks"))
+insert1 = "INSERT INTO student VALUES({0}, '{1}', {2}, {3})".format(roll,name,age,marks)
+cursor.execute(insert1)
+db.commit()
+db.close()
