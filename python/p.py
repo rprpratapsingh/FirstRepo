@@ -11,3 +11,7 @@ class rudra:
 		
 ob = rudra()
 ob.pr()
+
+
+
+bhai mere bhai tu fikar na kr uski 
